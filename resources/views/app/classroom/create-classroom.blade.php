@@ -24,7 +24,7 @@
                                 Name <span class="text-red-500">*</span>
                             </label>
                             <input type="text" name="name" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 placeholder="Enter your class name">
 
                             <x-input-error :messages="$errors->get('name')" class="mt-2" />
@@ -35,7 +35,7 @@
                                 Year <span class="text-red-500">*</span>
                             </label>
                             <input type="number" name="year" required max="2100" min="2025"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 placeholder="Enter batch year">
                             <x-input-error :messages="$errors->get('year')" class="mt-2" />
                         </div>
@@ -46,7 +46,7 @@
                                 Medium <span class="text-red-500">*</span>
                             </label>
                             <select name="medium" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                                 <option value="">Select Medium</option>
                                 <option value="english">English</option>
                                 <option value="sinhala">Sinhala</option>
@@ -82,7 +82,7 @@
                                 Day <span class="text-red-500">*</span>
                             </label>
                             <select name="day" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                                 <option value="">Select Day</option>
                                 <option value="monday">Monday</option>
                                 <option value="tuesday">Tuesday</option>
@@ -102,7 +102,7 @@
                                     Start Time <span class="text-red-500">*</span>
                                 </label>
                                 <input type="time" name="start_time" required
-                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                             </div>
 
                             <x-input-error :messages="$errors->get('start_time')" class="mt-2" />
@@ -115,7 +115,7 @@
                                     End Time <span class="text-red-500">*</span>
                                 </label>
                                 <input type="time" name="end_time" required
-                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                             </div>
                             <x-input-error :messages="$errors->get('end_time')" class="mt-2" />
                         </div>
@@ -128,7 +128,7 @@
                                 Institute <span class="text-red-500">*</span>
                             </label>
                             <input type="text" name="institute" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 placeholder="Enter institute Name and City">
 
                             <x-input-error :messages="$errors->get('institute')" class="mt-2" />

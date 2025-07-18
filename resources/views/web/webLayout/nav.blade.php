@@ -12,15 +12,15 @@
             <!-- Desktop Navigation -->
             <nav class="hidden items-center space-x-8 font-semibold lg:flex">
                 <a href="{{ route('home') }}"
-                    class="font-medium text-gray-600 transition-colors duration-200 hover:text-gray-900">Home</a>
+                    class="font-medium text-gray-600   hover:text-gray-900">Home</a>
                 <a href="{{ route('about') }}"
-                    class="font-medium text-gray-600 transition-colors duration-200 hover:text-gray-900">About</a>
+                    class="font-medium text-gray-600   hover:text-gray-900">About</a>
                 <a href="{{ route('schedule') }}"
-                    class="font-medium text-gray-600 transition-colors duration-200 hover:text-gray-900">Classes</a>
+                    class="font-medium text-gray-600   hover:text-gray-900">Classes</a>
                 <a href=""
-                    class="font-medium text-gray-600 transition-colors duration-200 hover:text-gray-900">Reviews</a>
+                    class="font-medium text-gray-600   hover:text-gray-900">Reviews</a>
                 <a href="{{ route('contact') }}"
-                    class="font-medium text-gray-600 transition-colors duration-200 hover:text-gray-900">Contact</a>
+                    class="font-medium text-gray-600   hover:text-gray-900">Contact</a>
                 <a href="{{ route('login') }}"
                     class="rounded-3xl bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:scale-105 hover:bg-blue-400">Sign
                     In</a>

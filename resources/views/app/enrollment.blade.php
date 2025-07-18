@@ -174,7 +174,7 @@
                                                         @csrf
                                                         @method('PATCH')
                                                         <button type="submit"
-                                                            class="rounded bg-green-600 px-3 py-1 text-xs font-medium text-white transition duration-150 ease-in-out hover:bg-green-700"
+                                                            class="rounded bg-green-600 px-3 py-1 text-xs font-medium text-white    hover:bg-green-700"
                                                             onclick="return confirm('Are you sure you want to approve this enrollment?')">
                                                             Approve
                                                         </button>
@@ -184,7 +184,7 @@
                                                         @csrf
                                                         @method('PATCH')
                                                         <button type="submit"
-                                                            class="rounded bg-red-600 px-3 py-1 text-xs font-medium text-white transition duration-150 ease-in-out hover:bg-red-700"
+                                                            class="rounded bg-red-600 px-3 py-1 text-xs font-medium text-white    hover:bg-red-700"
                                                             onclick="return confirm('Are you sure you want to reject this enrollment?')">
                                                             Reject
                                                         </button>
@@ -197,7 +197,7 @@
                                                     @csrf
                                                     @method('PATCH')
                                                     <button type="submit"
-                                                        class="rounded bg-red-600 px-3 py-1 text-xs font-medium text-white transition duration-150 ease-in-out hover:bg-red-700"
+                                                        class="rounded bg-red-600 px-3 py-1 text-xs font-medium text-white    hover:bg-red-700"
                                                         onclick="return confirm('Are you sure you want to reject this enrollment?')">
                                                         Reject
                                                     </button>
@@ -209,7 +209,7 @@
                                                     @csrf
                                                     @method('PATCH')
                                                     <button type="submit"
-                                                        class="rounded bg-green-600 px-3 py-1 text-xs font-medium text-white transition duration-150 ease-in-out hover:bg-green-700"
+                                                        class="rounded bg-green-600 px-3 py-1 text-xs font-medium text-white    hover:bg-green-700"
                                                         onclick="return confirm('Are you sure you want to approve this enrollment?')">
                                                         Approve
                                                     </button>

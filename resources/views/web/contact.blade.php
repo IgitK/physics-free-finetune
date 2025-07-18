@@ -7,7 +7,7 @@
                     <div class="grid gap-4">
                         <!-- Email Card -->
                         <div
-                            class="transform rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-shadow duration-300 hover:-translate-y-1 hover:shadow-2xl md:p-8">
+                            class="transform rounded-xl border border-gray-100 bg-white p-6 shadow-lg   hover:-translate-y-1 hover:shadow-2xl md:p-8">
                             <div class="mb-6">
 
                                 <i class="fa-solid fa-envelope rounded-lg bg-blue-100 p-4 text-lg text-blue-600"></i>
@@ -18,14 +18,14 @@
                                 </p>
                             </div>
                             <a href=""
-                                class="text-brand-blue inline-flex items-center text-lg font-medium transition-colors duration-200 hover:text-blue-800">
+                                class="text-brand-blue inline-flex items-center text-lg font-medium   hover:text-blue-800">
                                 info@adventus.com
 
                             </a>
                         </div>
                         <!-- Phone Card -->
                         <div
-                            class="transform rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-shadow duration-300 hover:-translate-y-1 hover:shadow-2xl md:p-8">
+                            class="transform rounded-xl border border-gray-100 bg-white p-6 shadow-lg   hover:-translate-y-1 hover:shadow-2xl md:p-8">
                             <div class="mb-6">
 
                                 <i class="fa-solid fa-phone rounded-lg bg-green-100 p-4 text-lg text-green-600"></i>
@@ -36,14 +36,14 @@
                                 </p>
                             </div>
                             <a href=""
-                                class="text-brand-blue inline-flex items-center text-lg font-medium transition-colors duration-200 hover:text-blue-800">
+                                class="text-brand-blue inline-flex items-center text-lg font-medium   hover:text-blue-800">
                                 +94 (77) 14 15 401
 
                             </a>
                         </div>
                         <!-- Address Card -->
                         <div
-                            class="transform rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-shadow duration-300 hover:-translate-y-1 hover:shadow-2xl md:p-8">
+                            class="transform rounded-xl border border-gray-100 bg-white p-6 shadow-lg   hover:-translate-y-1 hover:shadow-2xl md:p-8">
                             <div class="mb-6">
 
                                 <i class="fa-solid fa-envelope rounded-lg bg-blue-100 p-4 text-lg text-blue-600"></i>
@@ -54,7 +54,7 @@
                                 </p>
                             </div>
                             <a href=""
-                                class="text-brand-blue inline-flex items-center text-lg font-medium transition-colors duration-200 hover:text-blue-800">
+                                class="text-brand-blue inline-flex items-center text-lg font-medium   hover:text-blue-800">
                                 No.124, Kurunegala rd, Wawlwaththa
                             </a>
                         </div>
@@ -77,7 +77,7 @@
                                     Full Name <span class="text-red-500">*</span>
                                 </label>
                                 <input type="text" id="name" name="name" value="{{ old('name') }}"
-                                    class="@error('name') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm transition duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="@error('name') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     placeholder="Enter your full name" required>
                                 @error('name')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -90,7 +90,7 @@
                                     Email Address <span class="text-red-500">*</span>
                                 </label>
                                 <input type="email" id="email" name="email" value="{{ old('email') }}"
-                                    class="@error('email') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm transition duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="@error('email') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     placeholder="Enter your email address" required>
                                 @error('email')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -103,7 +103,7 @@
                                     Phone Number
                                 </label>
                                 <input type="tel" id="phone" name="phone" value="{{ old('phone') }}"
-                                    class="@error('phone') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm transition duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="@error('phone') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     placeholder="Enter your phone number">
                                 @error('phone')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -116,7 +116,7 @@
                                     Subject <span class="text-red-500">*</span>
                                 </label>
                                 <select id="subject" name="subject"
-                                    class="@error('subject') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm transition duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="@error('subject') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     required>
                                     <option value="">Select a subject</option>
                                     <option value="general" {{ old('subject') == 'general' ? 'selected' : '' }}>General
@@ -145,7 +145,7 @@
                                     Message <span class="text-red-500">*</span>
                                 </label>
                                 <textarea id="message" name="message" rows="5"
-                                    class="resize-vertical @error('message') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm transition duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="resize-vertical @error('message') border-red-500 @enderror w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     placeholder="Enter your message here..." required>{{ old('message') }}</textarea>
                                 @error('message')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -175,7 +175,7 @@
                             <!-- Submit Button -->
                             <div class="pt-4">
                                 <button type="submit"
-                                    class="w-full rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 px-6 py-3 font-semibold text-white shadow-md transition duration-200 hover:from-blue-700 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    class="w-full rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 px-6 py-3 font-semibold text-white shadow-md   hover:from-blue-700 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                                     Send Message
                                 </button>
                             </div>

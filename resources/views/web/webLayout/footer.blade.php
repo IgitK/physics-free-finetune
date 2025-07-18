@@ -15,16 +15,16 @@
                 <h4 class="mb-4 font-semibold">Services</h4>
                 <ul class="space-y-2 text-gray-400">
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">1-on-1 Tutoring</a>
+                        <a href="#" class=" hover:text-white">1-on-1 Tutoring</a>
                     </li>
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Group Sessions</a>
+                        <a href="#" class=" hover:text-white">Group Sessions</a>
                     </li>
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Exam Prep</a>
+                        <a href="#" class=" hover:text-white">Exam Prep</a>
                     </li>
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Online Learning</a>
+                        <a href="#" class=" hover:text-white">Online Learning</a>
                     </li>
                 </ul>
             </div>
@@ -32,16 +32,16 @@
                 <h4 class="mb-4 font-semibold">Subjects</h4>
                 <ul class="space-y-2 text-gray-400">
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Mechanics</a>
+                        <a href="#" class=" hover:text-white">Mechanics</a>
                     </li>
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Quantum Physics</a>
+                        <a href="#" class=" hover:text-white">Quantum Physics</a>
                     </li>
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Electromagnetism</a>
+                        <a href="#" class=" hover:text-white">Electromagnetism</a>
                     </li>
                     <li>
-                        <a href="#" class="transition-colors hover:text-white">Thermodynamics</a>
+                        <a href="#" class=" hover:text-white">Thermodynamics</a>
                     </li>
                 </ul>
             </div>

@@ -44,16 +44,16 @@
                                 class="flex w-full items-center justify-between rounded-md border border-gray-300 bg-white px-3 py-2 text-left focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <span
                                     x-text="selected === 'tutorial' ? 'Tutorial' : selected === 'past_paper' ? 'Past Paper' : 'Model Paper'"></span>
-                                <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"
+                                <i class="fas fa-chevron-down text-gray-400  "
                                     :class="{ 'rotate-180': open }"></i>
                             </button>
 
-                            <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                                x-transition:enter-start="opacity-0 scale-95"
-                                x-transition:enter-end="opacity-100 scale-100"
-                                x-transition:leave="transition ease-in duration-75"
-                                x-transition:leave-start="opacity-100 scale-100"
-                                x-transition:leave-end="opacity-0 scale-95"
+                            <div x-show="open" x-:enter="  "
+                                x-:enter-start="opacity-0 scale-95"
+                                x-:enter-end="opacity-100 scale-100"
+                                x-:leave="  duration-75"
+                                x-:leave-start="opacity-100 scale-100"
+                                x-:leave-end="opacity-0 scale-95"
                                 class="absolute z-10 mt-1 w-full rounded-md border border-gray-300 bg-white shadow-lg">
                                 <div class="py-1">
                                     <button type="button"

@@ -63,7 +63,7 @@
             <!-- Schedule Grid -->
             <div id="schedule-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach ($classrooms as $index => $classroom)
-                    <div class="schedule-card rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl"
+                    <div class="schedule-card rounded-xl border border-gray-100 bg-white p-6 shadow-lg   hover:shadow-xl"
                         data-year="{{ $classroom->year }}" data-type="{{ $classroom->type }}"
                         data-medium="{{ $classroom->medium }}" data-index="{{ $index }}">
                         <div class="mb-4 flex items-center justify-between">
@@ -163,7 +163,7 @@
                                     Full Name <span class="text-red-500">*</span>
                                 </label>
                                 <input type="text" id="fullname" name="fullname" required
-                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     placeholder="Enter your full name">
                             </div>
 
@@ -173,7 +173,7 @@
                                     Phone Number <span class="text-red-500">*</span>
                                 </label>
                                 <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
-                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                     placeholder="0771234567">
                                 <p class="mt-1 text-xs text-gray-500">Enter 10-digit phone number without spaces</p>
                             </div>
@@ -185,7 +185,7 @@
                                 Email Address <span class="text-red-500">*</span>
                             </label>
                             <input type="email" id="email" name="email" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 placeholder="your.email@example.com">
                             <p class="mt-1 text-xs text-gray-500">Double check your email before submission</p>
                         </div>
@@ -202,7 +202,7 @@
                                     Year <span class="text-red-500">*</span>
                                 </label>
                                 <select id="year" name="year" required
-                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                                     <option value="">Select Year</option>
                                     @foreach (collect($classrooms)->unique('year') as $classroom)
                                         <option value="{{ $classroom->year }}">{{ $classroom->year }} A/L</option>
@@ -216,7 +216,7 @@
                                     Medium <span class="text-red-500">*</span>
                                 </label>
                                 <select id="medium" name="medium" required
-                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                                     <option value="">Select Medium</option>
                                     @foreach (collect($classrooms)->unique('medium') as $classroom)
                                         <option value="{{ $classroom->medium }}">{{ $classroom->medium }}</option>
@@ -250,7 +250,7 @@
                                 Select the Class You Need to Join <span class="text-red-500">*</span>
                             </label>
                             <select id="class" name="class" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 disabled>
                                 <option value="">Please select year, medium, and class type first</option>
                             </select>
@@ -265,7 +265,7 @@
                                 Additional Notes (Optional)
                             </label>
                             <textarea id="notes" name="notes" rows="3"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 placeholder="Any special requirements or questions..."></textarea>
                         </div>
                     </div>
@@ -289,7 +289,7 @@
                     <!-- Submit Button -->
                     <div class="pt-6 text-center">
                         <button type="submit"
-                            class="inline-flex transform items-center rounded-lg border border-transparent bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
+                            class="inline-flex transform items-center rounded-lg border border-transparent bg-blue-600 px-6 py-3 text-sm font-semibold text-white   hover:scale-105 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
                             id="submit-btn">
                             <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

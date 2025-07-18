@@ -23,7 +23,7 @@
                             <label for="name" class="block text-sm font-medium text-gray-700">Name <span
                                     class="text-red-500">*</span></label>
                             <input type="text" name="name" required value="{{ old('name', $classroom->name) }}"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                             <x-input-error :messages="$errors->get('name')" class="mt-2" />
                         </div>
 
@@ -33,7 +33,7 @@
                                     class="text-red-500">*</span></label>
                             <input type="number" name="year" required min="2025" max="2100"
                                 value="{{ old('year', $classroom->year) }}"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                             <x-input-error :messages="$errors->get('year')" class="mt-2" />
                         </div>
 
@@ -42,7 +42,7 @@
                             <label for="medium" class="block text-sm font-medium text-gray-700">Medium <span
                                     class="text-red-500">*</span></label>
                             <select name="medium" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                                 <option value="">Select Medium</option>
                                 <option value="english"
                                     {{ old('medium', $classroom->medium) === 'english' ? 'selected' : '' }}>English
@@ -82,7 +82,7 @@
                             <label for="day" class="block text-sm font-medium text-gray-700">Day <span
                                     class="text-red-500">*</span></label>
                             <select name="day" required
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                                 @foreach (['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'satureday', 'sunday'] as $day)
                                     <option value="{{ $day }}"
                                         {{ old('day', $classroom->day) === $day ? 'selected' : '' }}>
@@ -99,7 +99,7 @@
                                     class="text-red-500">*</span></label>
                             <input type="time" name="start_time" required
                                 value="{{ old('start_time', $classroom->start_time) }}"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                             <x-input-error :messages="$errors->get('start_time')" class="mt-2" />
                         </div>
 
@@ -109,7 +109,7 @@
                                     class="text-red-500">*</span></label>
                             <input type="time" name="end_time" required
                                 value="{{ old('end_time', $classroom->end_time) }}"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500">
                             <x-input-error :messages="$errors->get('end_time')" class="mt-2" />
                         </div>
 
@@ -122,7 +122,7 @@
                             </label>
                             <input type="text" name="institute" required
                                 value="{{ old('institute', $classroom->institute) }}"
-                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm transition-colors duration-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                                class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm   focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
                                 placeholder="Enter institute Name and City">
 
                             <x-input-error :messages="$errors->get('institute')" class="mt-2" />
