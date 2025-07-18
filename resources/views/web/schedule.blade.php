@@ -20,7 +20,7 @@
                 <div class="flex items-center space-x-2">
                     <label for="year-filter" class="text-sm font-medium text-slate-700">Year:</label>
                     <select id="year-filter"
-                        class="rounded-lg border-slate-300 bg-white px-4 py-2.5 text-sm shadow-sm transition-all duration-200 hover:border-blue-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                        class="rounded-lg border-slate-300 bg-white px-4 py-2.5 text-sm shadow-sm   hover:border-blue-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
                         <option value="all">All Years</option>
                         @foreach (collect($classrooms)->unique('year') as $classroom)
                             <option value="{{ $classroom->year }}">{{ ucfirst($classroom->year) }}</option>
@@ -31,7 +31,7 @@
                 <div class="flex items-center space-x-2">
                     <label for="medium-filter" class="text-sm font-medium text-slate-700">Medium:</label>
                     <select id="medium-filter"
-                        class="rounded-lg border-slate-300 bg-white px-4 py-2.5 text-sm shadow-sm transition-all duration-200 hover:border-blue-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                        class="rounded-lg border-slate-300 bg-white px-4 py-2.5 text-sm shadow-sm   hover:border-blue-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
                         <option value="all">All Medium</option>
                         @foreach (collect($classrooms)->unique('medium') as $classroom)
                             <option value="{{ $classroom->medium }}">{{ ucfirst($classroom->medium) }}</option>
@@ -43,7 +43,7 @@
                 <div class="flex items-center space-x-2">
                     <label for="type-filter" class="text-sm font-medium text-slate-700">Type:</label>
                     <select id="type-filter"
-                        class="rounded-lg border-slate-300 bg-white px-4 py-2.5 text-sm shadow-sm transition-all duration-200 hover:border-blue-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
+                        class="rounded-lg border-slate-300 bg-white px-4 py-2.5 text-sm shadow-sm   hover:border-blue-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20">
                         <option value="all">All Types</option>
                         @foreach (collect($classrooms)->unique('type') as $classroom)
                             <option value="{{ $classroom->type }}">{{ ucfirst($classroom->type) }}</option>
@@ -53,7 +53,7 @@
 
                 <!-- Reset Button -->
                 <button id="reset-filters"
-                    class="rounded-lg bg-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-all duration-200 hover:bg-slate-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-500/20 focus:ring-offset-2">
+                    class="rounded-lg bg-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700   hover:bg-slate-300 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-500/20 focus:ring-offset-2">
                     Reset Filters
                 </button>
             </div>
@@ -66,12 +66,12 @@
             <!-- Schedule Grid -->
             <div id="schedule-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 @foreach ($classrooms as $index => $classroom)
-                    <div class="schedule-card group rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl"
+                    <div class="schedule-card group rounded-xl border border-slate-200 bg-white p-6 shadow-sm   hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl"
                         data-year="{{ $classroom->year }}" data-type="{{ $classroom->type }}"
                         data-medium="{{ $classroom->medium }}" data-index="{{ $index }}">
                         <div class="mb-4 flex items-center justify-between">
                             <h3
-                                class="text-xl font-semibold text-slate-800 transition-colors group-hover:text-blue-600">
+                                class="text-xl font-semibold text-slate-800  group-hover:text-blue-600">
                                 {{ $classroom->name }}
                             </h3>
                             <span
@@ -141,7 +141,7 @@
                     <p class="mt-2 text-slate-600">No classes match your current filter criteria.</p>
                     <div class="mt-6">
                         <button id="clear-filters"
-                            class="inline-flex items-center rounded-lg border border-transparent bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:bg-blue-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2">
+                            class="inline-flex items-center rounded-lg border border-transparent bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-sm   hover:bg-blue-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2">
                             Clear Filters
                         </button>
                     </div>
@@ -179,7 +179,7 @@
                                     Full Name <span class="text-red-500">*</span>
                                 </label>
                                 <input type="text" id="fullname" name="fullname" required
-                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                                     placeholder="Enter your full name">
                             </div>
 
@@ -189,7 +189,7 @@
                                     Phone Number <span class="text-red-500">*</span>
                                 </label>
                                 <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
-                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                                     placeholder="0771234567">
                                 <p class="mt-1 text-xs text-slate-500">Enter 10-digit phone number without spaces</p>
                             </div>
@@ -201,7 +201,7 @@
                                 Email Address <span class="text-red-500">*</span>
                             </label>
                             <input type="email" id="email" name="email" required
-                                class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                                class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                                 placeholder="your.email@example.com">
                             <p class="mt-1 text-xs text-slate-500">Double check your email before submission</p>
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
@@ -231,7 +231,7 @@
                                     Year <span class="text-red-500">*</span>
                                 </label>
                                 <select id="year" name="year" required
-                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20">
+                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20">
                                     <option value="">Select Year</option>
                                     @foreach (collect($classrooms)->unique('year') as $classroom)
                                         <option value="{{ $classroom->year }}">{{ $classroom->year }} A/L</option>
@@ -245,7 +245,7 @@
                                     Medium <span class="text-red-500">*</span>
                                 </label>
                                 <select id="medium" name="medium" required
-                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20">
+                                    class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20">
                                     <option value="">Select Medium</option>
                                     @foreach (collect($classrooms)->unique('medium') as $classroom)
                                         <option value="{{ $classroom->medium }}">{{ $classroom->medium }}</option>
@@ -264,14 +264,14 @@
                                     <input type="radio" name="class_type" value="physical" required
                                         class="h-4 w-4 border-slate-300 text-blue-600 focus:ring-2 focus:ring-blue-500">
                                     <span
-                                        class="ml-3 text-sm text-slate-700 transition-colors group-hover:text-blue-600">Physical
+                                        class="ml-3 text-sm text-slate-700  group-hover:text-blue-600">Physical
                                         Classes</span>
                                 </label>
                                 <label class="group flex cursor-pointer items-center">
                                     <input type="radio" name="class_type" value="online" required
                                         class="h-4 w-4 border-slate-300 text-blue-600 focus:ring-2 focus:ring-blue-500">
                                     <span
-                                        class="ml-3 text-sm text-slate-700 transition-colors group-hover:text-blue-600">Online
+                                        class="ml-3 text-sm text-slate-700  group-hover:text-blue-600">Online
                                         Classes</span>
                                 </label>
                             </div>
@@ -283,7 +283,7 @@
                                 Select the Class You Need to Join <span class="text-red-500">*</span>
                             </label>
                             <select id="class" name="class_id" required
-                                class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 disabled:bg-slate-50 disabled:text-slate-500"
+                                class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 disabled:bg-slate-50 disabled:text-slate-500"
                                 disabled>
                                 <option value="">Please select year, medium, and class type first</option>
                                 @foreach ($classrooms as $classroom)
@@ -307,7 +307,7 @@
                                 Additional Notes (Optional)
                             </label>
                             <textarea id="notes" name="notes" rows="3"
-                                class="w-full resize-none rounded-lg border border-slate-300 px-4 py-3 text-sm transition-all duration-200 hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                                class="w-full resize-none rounded-lg border border-slate-300 px-4 py-3 text-sm   hover:border-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                                 placeholder="Any special requirements or questions..."></textarea>
                         </div>
                     </div>
@@ -318,12 +318,12 @@
                         <label class="group flex cursor-pointer items-start">
                             <input type="checkbox" name="terms_accepted" value="1" required
                                 class="mt-1 h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-2 focus:ring-blue-500">
-                            <span class="ml-3 text-sm text-slate-700 transition-colors group-hover:text-slate-800">
+                            <span class="ml-3 text-sm text-slate-700  group-hover:text-slate-800">
                                 I agree to the <a href="#"
-                                    class="text-blue-600 underline transition-colors hover:text-blue-700">Terms and
+                                    class="text-blue-600 underline  hover:text-blue-700">Terms and
                                     Conditions</a>
                                 and <a href="#"
-                                    class="text-blue-600 underline transition-colors hover:text-blue-700">Privacy
+                                    class="text-blue-600 underline  hover:text-blue-700">Privacy
                                     Policy</a>
                                 <span class="text-red-500">*</span>
                             </span>
@@ -333,7 +333,7 @@
                     <!-- Submit Button -->
                     <div class="pt-6 text-center">
                         <button type="submit"
-                            class="inline-flex transform items-center rounded-lg border border-transparent bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            class="inline-flex transform items-center rounded-lg border border-transparent bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow-lg   hover:scale-105 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                             id="submit-btn">
                             <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

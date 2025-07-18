@@ -26,7 +26,7 @@
                                 <i class="fas fa-envelope text-gray-400"></i>
                             </div>
                             <input type="email" id="email" name="email" value="{{ old('email') }}"
-                                class="@error('email') border-red-500 @enderror block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-3 transition-colors focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                class="@error('email') border-red-500 @enderror block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-3  focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 placeholder="Enter your email" required>
                         </div>
                         @error('email')
@@ -44,7 +44,7 @@
                                 <i class="fas fa-lock text-gray-400"></i>
                             </div>
                             <input type="password" id="password" name="password"
-                                class="@error('password') border-red-500 @enderror block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-12 transition-colors focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                class="@error('password') border-red-500 @enderror block w-full rounded-lg border border-gray-300 py-3 pl-10 pr-12  focus:border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 placeholder="Enter your password" required>
                             <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3"
                                 onclick="togglePassword()">
@@ -73,7 +73,7 @@
 
                     <!-- Login Button -->
                     <button type="submit"
-                        class="w-full rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white transition-colors hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        class="w-full rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         <i class="fas fa-sign-in-alt mr-2"></i>
                         Sign In
                     </button>

@@ -17,11 +17,11 @@
                   </p>
                   <div class="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
                       <a href="#signup"
-                          class="inline-block rounded-lg bg-blue-500 px-9 py-3 text-lg font-bold text-white shadow-lg transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                          class="inline-block rounded-lg bg-blue-500 px-9 py-3 text-lg font-bold text-white shadow-lg  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
                           Join Us
                       </a>
                       <a href="#learn-more"
-                          class="inline-block rounded-lg border border-blue-500 bg-white px-9 py-3 text-lg font-bold text-blue-500 shadow transition-colors hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-offset-2">
+                          class="inline-block rounded-lg border border-blue-500 bg-white px-9 py-3 text-lg font-bold text-blue-500 shadow  hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-offset-2">
                           Learn More
                       </a>
                   </div>
@@ -31,7 +31,7 @@
               <div class="relative">
                   <!-- Main Card -->
                   <div
-                      class="hover:scale-101 relative transform rounded-3xl border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-xl transition-all duration-500">
+                      class="hover:scale-101 relative transform rounded-3xl border border-white/20 bg-white/10 p-4 shadow-2xl backdrop-blur-xl  ">
 
                       <!-- Student Illustration Placeholder -->
                       <div

@@ -149,7 +149,7 @@
             <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
                 @foreach ($classrooms as $classroom)
                     <!--  Classroom Card -->
-                    <div class="classroom-item rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-shadow duration-200 hover:border-blue-200 hover:shadow-md"
+                    <div class="classroom-item rounded-xl border border-gray-200 bg-white p-5 shadow-sm   hover:border-blue-200 hover:shadow-md"
                         data-name="{{ strtolower($classroom->name) }}" data-medium="{{ $classroom->medium }}"
                         data-type="{{ $classroom->type }}" data-institute="{{ $classroom->institute }}">
 
@@ -208,11 +208,11 @@
                         <!-- Actions -->
                         <div class="flex space-x-3">
                             <a href="{{ route('classroom.show', $classroom) }}"
-                                class="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700">
+                                class="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white  hover:bg-blue-700">
                                 View
                             </a>
                             <a href="{{ route('classroom.edit', $classroom) }}"
-                                class="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100">
+                                class="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700  hover:bg-gray-100">
                                 Edit
                             </a>
                             <!-- Delete Button -->

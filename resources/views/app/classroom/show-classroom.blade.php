@@ -26,7 +26,7 @@
             </div>
 
             <a href="{{ route('classroom.edit', $classroom) }}"
-                class="mt-2 text-lg text-gray-500 transition hover:text-blue-600 sm:mt-0" aria-label="Edit Classroom">
+                class="mt-2 text-lg text-gray-500  hover:text-blue-600 sm:mt-0" aria-label="Edit Classroom">
                 <i class="fa-solid fa-pen-to-square"></i>
             </a>
         </div>
@@ -40,7 +40,7 @@
 
             <ul class="divide-y divide-gray-200">
                 <!-- Sample Study Material Row -->
-                <li class="group flex items-center justify-between px-6 py-4 transition hover:bg-gray-50">
+                <li class="group flex items-center justify-between px-6 py-4  hover:bg-gray-50">
                     <div class="flex items-center">
                         <div class="h-10 w-10 flex-shrink-0">
                             <div
@@ -74,7 +74,7 @@
 
             <ul class="divide-y divide-gray-200">
                 <!-- Sample Student Row -->
-                <li class="group flex items-center justify-between px-6 py-4 transition hover:bg-gray-50">
+                <li class="group flex items-center justify-between px-6 py-4  hover:bg-gray-50">
                     <div class="flex items-center">
                         <div class="h-10 w-10 flex-shrink-0">
                             <div

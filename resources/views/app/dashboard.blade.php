@@ -46,22 +46,22 @@
                 <h3 class="mb-4 text-lg font-medium leading-6 text-gray-900">Quick Actions</h3>
                 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <button
-                        class="flex flex-col items-center rounded-lg bg-indigo-50 p-4 transition-colors hover:bg-indigo-100">
+                        class="flex flex-col items-center rounded-lg bg-indigo-50 p-4  hover:bg-indigo-100">
                         <i class="fas fa-plus mb-2 text-2xl text-indigo-600"></i>
                         <span class="text-sm font-medium text-indigo-900">Add Student</span>
                     </button>
                     <button
-                        class="flex flex-col items-center rounded-lg bg-green-50 p-4 transition-colors hover:bg-green-100">
+                        class="flex flex-col items-center rounded-lg bg-green-50 p-4  hover:bg-green-100">
                         <i class="fas fa-calendar-plus mb-2 text-2xl text-green-600"></i>
                         <span class="text-sm font-medium text-green-900">Schedule Class</span>
                     </button>
                     <button
-                        class="flex flex-col items-center rounded-lg bg-yellow-50 p-4 transition-colors hover:bg-yellow-100">
+                        class="flex flex-col items-center rounded-lg bg-yellow-50 p-4  hover:bg-yellow-100">
                         <i class="fas fa-file-plus mb-2 text-2xl text-yellow-600"></i>
                         <span class="text-sm font-medium text-yellow-900">Create Course</span>
                     </button>
                     <button
-                        class="flex flex-col items-center rounded-lg bg-purple-50 p-4 transition-colors hover:bg-purple-100">
+                        class="flex flex-col items-center rounded-lg bg-purple-50 p-4  hover:bg-purple-100">
                         <i class="fas fa-envelope mb-2 text-2xl text-purple-600"></i>
                         <span class="text-sm font-medium text-purple-900">Send Message</span>
                     </button>

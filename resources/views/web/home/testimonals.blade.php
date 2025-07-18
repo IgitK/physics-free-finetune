@@ -1,6 +1,6 @@
     <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl">
         <!-- Carousel Container -->
-        <div id="carousel" class="carousel-container flex transition-transform duration-500 ease-in-out">
+        <div id="carousel" class="carousel-container flex   ">
             <!-- Testimonial Items -->
             @foreach ([
         ['name' => 'John Smith', 'role' => 'CEO, TechCorp', 'image' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face', 'quote' => 'This product completely transformed our workflow. The team\'s productivity increased by 300% and we couldn\'t be happier with the results.'],
@@ -29,14 +29,14 @@
 
         <!-- Navigation Arrows -->
         <button id="prevBtn" aria-label="Previous Slide"
-            class="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white p-3 shadow-lg transition-colors duration-200 hover:bg-gray-50">
+            class="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white p-3 shadow-lg   hover:bg-gray-50">
             <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
             </svg>
         </button>
 
         <button id="nextBtn" aria-label="Next Slide"
-            class="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white p-3 shadow-lg transition-colors duration-200 hover:bg-gray-50">
+            class="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white p-3 shadow-lg   hover:bg-gray-50">
             <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -46,7 +46,7 @@
     <!-- Dots Indicator -->
     <div class="mt-8 flex justify-center space-x-2">
         @foreach (range(0, 3) as $index)
-            <button class="dot h-3 w-3 rounded-full bg-gray-300 transition-colors duration-200"
+            <button class="dot h-3 w-3 rounded-full bg-gray-300  "
                 data-slide="{{ $index }}"></button>
         @endforeach
     </div>
